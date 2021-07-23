@@ -425,20 +425,19 @@ body.lock {
 .header__time::after {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 50.15%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: url("../img/global.jpg");
-  width: calc(100% - 0.4rem);
-  height: calc(100% - 0.4rem);
+  width: calc(100% - 0.5rem);
+  height: calc(100% - 0.5rem);
   border-radius: 4rem;
 }
 
 .header__time-start {
   margin: 0rem 3.3rem 0rem 0rem;
-  border-radius: 3rem;
   background: -webkit-gradient(linear, left top, right top, from(#034de2), to(#00e700));
   background: -o-linear-gradient(left, #034de2, #00e700);
   background: linear-gradient(to right, #034de2, #00e700);
@@ -486,6 +485,36 @@ body.lock {
   background: -webkit-gradient(linear, left top, right top, from(#034de2), to(#00e700));
   background: -o-linear-gradient(left, #034de2, #00e700);
   background: linear-gradient(to right, #034de2, #00e700);
+}
+
+.footer {
+  position: relative;
+  padding: 0rem 0rem 5rem 0rem;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__item {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.footer__item-i {
+  color: #fff;
+}
+
+.footer__item-i:hover {
+  text-decoration: underline;
 }
 
 .page {
@@ -1098,7 +1127,7 @@ body.lock {
 }
 
 .qus__content {
-  padding: 0rem 0rem 26.6rem 0rem;
+  padding: 0rem 0rem 20.6rem 0rem;
 }
 
 .qus__title {
@@ -1420,6 +1449,21 @@ body.lock {
     visibility: visible;
   }
 
+  .footer__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+
+  .footer__item {
+    margin: 0rem 0rem 3rem 0rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+
   .about__content {
     padding: 10.1rem 8rem 11.1rem;
   }
@@ -1730,7 +1774,7 @@ body.lock {
   }
 
   .qus__content {
-    padding: 0rem 8rem 26.6rem;
+    padding: 0rem 8rem 6.6rem;
   }
 
   .qus__title {
